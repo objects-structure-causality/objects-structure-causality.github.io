@@ -1,0 +1,69 @@
+---
+layout: default
+video: true
+chat: true
+session_1: true
+session_2: true
+---
+
+<!-- <div class="row justify-content-center">
+  <div class="paper text-center">
+	<h3>{{ page.title }}</h3>
+	<ul>
+		<li><b>{{ page.authors }}</b></li>
+		<li>
+		{% if page.track == "invited" %}
+		<span> (Invited Talk)</span>
+		{% elsif page.kind == "oral" %}
+		<span> (Oral)</span>
+		{% elsif page.kind == "spotlight" %}
+		<span> (Spotlight)</span>
+		{% endif %}
+		</li>
+
+		{% if page.session_id > 0 %}
+		<li>
+		{% if page.camera_ready %}
+        <span><a href="https://github.com/orlrworkshop/orlrworkshop.github.io/blob/master/pdf/ORLR_{{ page.id }}.pdf" target="_blank">PDF</a></span>
+		{% else %}
+		<span>PDF</span>
+		{% endif %}
+		{% if page.session_id == 1 and layout.session_1 and page.meeting_url %}
+		<span> · </span>
+		<span><a href="{{ page.meeting_url }}" target="_blank">Join Meeting Room</a></span>
+		<span> · </span>
+		<span>See <a href="https://neurips.cc/virtual/2020/workshop/5731">NeurIPS Portal</a> for password</span>
+		{% elsif page.session_id == 2 and layout.session_2 and page.meeting_url %}
+		<span> · </span>
+		<span><a href="{{ page.meeting_url }}" target="_blank">Join Meeting Room</a></span>
+		<span> · </span>
+		<span>See <a href="https://icml.cc/virtual/2020/workshop/5731">NeurIPS Portal</a> for password</span>
+		{% endif %}
+		</li>
+		{% endif %}
+	</ul>
+</div>
+</div>
+
+{% if page.live == true %}
+<div>
+    <div class id="video"> <div id="presentation-embed" class="slp my-auto"></div>
+        <script src="https://slideslive.com/embed_presentation.js"></script> <script>
+          embed = new SlidesLiveEmbed("presentation-embed", {
+            presentationId: "{{ page.slides_live_id }}",
+            autoPlay: false, // change to true to autoplay the embedded presentation
+            verticalEnabled: true,
+            verticalWhenWidthLte: 500,
+            allowHiddenControlsWhenPaused: true,
+            hideTitle: true,
+          });
+        </script>
+    </div>
+</div>
+</br>
+{% endif %}
+
+<div class="row justify-content-center">
+	<h3>Abstract</h3>
+<p align=justify>{{ page.abstract }} </p>
+</div> -->

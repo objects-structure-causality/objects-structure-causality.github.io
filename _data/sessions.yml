@@ -1,0 +1,15 @@
+- id: 1
+  papers:
+  - abstract: Lorem Ipsum
+    authors: "Lorem Ipsum et al."
+    camera_ready: true
+    cmt_id: 20
+    id: 20
+    kind: oral
+    poster: false
+    session: 2
+    supplement: false
+    title: 'Lorem Ispum'
+    track: research
+
+  title: ''

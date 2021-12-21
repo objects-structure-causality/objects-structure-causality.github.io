@@ -1,0 +1,69 @@
+---
+layout: default
+---
+
+<div id="program">
+
+<div class="row">
+  <p>Accepted papers will be listed on the workshop website.</p>
+<!-- <p>
+     For each paper being presented at the workshop, we will host a pdf of the paper and a pre-recorded
+     (lightning / contributed talk) from SlidesLive, both of which can be accessed from each paper's landing page
+     (which you can access by clicking on the title of the relevant paper).
+     We will also host a poster for each paper in
+     <a href="https://neurips.gather.town/app/MMgaAUBjDoq2IBnP/NeurIPS_ORLR"> ORLR GatherTown </a> spread across
+     <a href="/schedule.html"> two sessions</a>
+     (main session is indicated). <i> All authors are encouraged to present in both sessions.</i></p> -->
+</div>
+
+<!-- {% for session in site.data.sessions %}
+<div class="row">
+<a name="session-{{ session.id }}"></a>
+<table class="table table-striped">
+<thead>
+     <tr>
+          <th>Title</th>
+          <th>Authors</th>
+          <th>PDF</th>
+          <th>Session</th>
+</thead>
+<tbody>
+
+{% for paper in session.papers %}
+<tr>
+
+<td>
+<span><a href="/program/orlr_{{ paper.id }}.html">{{ paper.title }}</a></span>
+{% if paper.kind == "oral" %}
+<span> (Oral)</span>
+{% elsif paper.kind == "spotlight" %}
+<span> (Spotlight)</span>
+{% endif %}
+</td>
+
+<td>
+{{ paper.authors }}
+</td>
+
+<td>
+{% if paper.camera_ready %}
+<a href="https://github.com/objects-structure-causality/objects-structure-causality.github.io/blob/master/pdf/OSC_{{ paper.id }}.pdf" target="_blank">PDF</a>
+{% endif %}
+</td>
+<td>
+{% if paper.session == 1 or paper.session == 2%}
+#{{paper.session}}
+{% endif %}
+{% if paper.session == 3%}
+#1/#2
+{% endif %}
+</td>
+
+</tr>
+{% endfor %}
+</tbody>
+</table>
+</div>
+{% endfor %} -->
+
+</div>

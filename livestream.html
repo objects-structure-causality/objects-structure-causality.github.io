@@ -1,0 +1,74 @@
+---
+layout: default
+livestream: false
+slides_live_id:
+join_link:
+---
+
+<div class="row justify-content-center">
+<p>The livestream will be available on the day of the workshop. Please come back later.</p>
+</div>
+
+<!-- <div class="row justify-content-center">
+<p>You can also view the livestream on the <a href="https://iclr.cc/virtual/TODO.html" target="_blank">ICLR Portal</a>.</p>
+</div> -->
+
+
+<!--<div>
+    <div class id="video"> <div id="presentation-embed" class="slp my-auto"></div>
+        <script src="https://slideslive.com/embed_presentation.js"></script> <script>
+          embed = new SlidesLiveEmbed("presentation-embed", {
+            presentationId: "CHANGEME",
+            autoPlay: false, // change to true to autoplay the embedded presentation
+            verticalEnabled: true,
+            verticalWhenWidthLte: 500,
+            allowHiddenControlsWhenPaused: true,
+            hideTitle: true,
+          });
+        </script>
+    </div>
+</div>-->
+
+<!--<div class="container">
+    <div class="pp-card m-3">
+        <div class="" id="rocketchat-div">
+            <div class="public-chat-title-box">
+
+                    <span class="float-left"><a class="text-warning text-sm" href="https://iclr.cc/rocketchat/concerns"  target="_blank">Concerns</a></span>
+
+                <a style="float:right;" href="https://iclr2022.rocket.chat/channel/CHANGEME?resumeToken=CHANGEME" target="_blank" title="Full Size">
+                    <i class="fas fa-expand"></i>
+                </a>
+            </div>
+
+            <script>
+                function authenticateRocketChat() {
+                    const rc_window = document.getElementById('rocketchat-iframe').contentWindow
+                    console.log("Calling rocketchat postMessage login-with-token CHANGEME path /channel/CHANGEME window ")
+                    rc_window.postMessage({
+                        externalCommand: 'login-with-token',
+                        token: 'CHANGEME'
+                    }, 'https://iclr2022.rocket.chat');
+
+
+                    rc_window.postMessage({
+                        externalCommand: 'go',
+                        path: '/channel/CHANGEME'
+                    }, 'https://iclr2022.rocket.chat');
+                }
+
+                window.addEventListener('message', function(e) {
+                    if (e.origin == 'https://iclr2022.rocket.chat') {
+                        console.log("rocketchat event", e.data); // event name
+                    } else {
+                        console.log("message from ", e.origin)
+                    }
+                });
+                $(window).on("load", function() {setTimeout(authenticateRocketChat, 1000);});
+            </script>
+            <iframe frameBorder="0" width='100%' height='400px' src="https://iclr2022.rocket.chat/channel/CHANGEME?layout=embedded"  id="rocketchat-iframe"
+                    onload="authenticateRocketChat()" onerror="console.log('Rocketchat iframe error')">
+            </iframe>
+         </div>
+    </div>
+</div>-->
