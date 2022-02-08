@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>ICLR 2022 Workshop on the Elements of Reasoning: Objects, Structure and Causality</title>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.0/jquery.min.js"></script>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <script>
+    /* JavaScript module code here */
+    function localize_time(timeString) {
+      var hours = timeString.split(":")[0].padStart(2, "0");
+      var minutes = timeString.split(":")[1].padStart(2, "0");
+      var datetime = new Date('1970-01-02T' + hours + ":" + minutes + ':00Z');
+      return datetime.getHours() + ":" + datetime.getMinutes().toString().padStart(2, "0");
+    }
+
+    function adjustTimes() {
+      // change timezone abbreviation in table header
+      tz_abbrev = new Date().toLocaleTimeString('en-us',{timeZoneName:'short'}).split(' ')[2];
+      document.querySelectorAll(".timezone-abbrev").forEach(node => node.textContent = tz_abbrev);
+      // change times to local timezone
+      document.querySelectorAll(".time-value").forEach(node => node.textContent = localize_time(node.textContent));
+
+    }
+  </script>
+  <link href="css/style.css" rel="stylesheet">
+</head>
+
+<nav class="navbar navbar-expand-lg navbar-light bg-light" id="navbar">
+
+  <div class="container" id="header">
+
+    <div>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-main" aria-controls="navbar-main" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+    </div> <!-- navbar-header -->
+
+    <div class="collapse navbar-collapse" id="navbar-main">
+      <ul class="navbar-nav mx-auto">
+        <li class="nav-link"><a href="/index.html">About</a></li>
+<!--        <li class="nav-link"><a href="/format.html">How to Participate</a></li>-->
+<!--        <li class="nav-link"><a href="/livestream.html">&#127909; Livestream</a></li>-->
+        <li class="nav-link"><a href="/schedule.html">Schedule</a></li>
+        <li class="nav-link"><a href="/speakers.html">Invited Speakers</a></li>
+        <li class="nav-link"><a href="/index.html#organizers">Organizers</a></li>
+<!--        <li class="nav-link"><a href="/papers.html">Papers</a></li>-->
+        <li class="nav-link"><a href="/submit.html">Call for Papers</a></li>
+      </ul>
+
+    </div> <!-- navbar-main -->
+
+  </div>
+
+</nav> <!-- navbar -->
+
+<body onload="adjustTimes();">
+
+  <div class="container" id="content">
+
+    <div class="page-content">
+
+      {{ content }}
+
+    </div> <!-- container -->
+
+  </div> <!-- page-content -->
+
+
+  <div class="footnote bg-light">
+    <div class="container">
+      <p>For questions / comments, reach out to: <a href="mailto:objects-structure-causality@googlegroups.com">objects-structure-causality@googlegroups.com</a></p>
+      <p>Website template adapted from the <a href="https://orlrworkshop.github.io/">ORLR</a>/<a href="https://oolworkshop.github.io/">OOL</a> workshops, originally based on the template of the <a href="https://baicsworkshop.github.io/">BAICS</a> workshop.</p>
+    </div>
+  </div>
+</body>
+</html>
