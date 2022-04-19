@@ -92,6 +92,10 @@ table {
   border: none;
 }
 
+.strike {
+  text-decoration: line-through;
+}
+
 #references li {
   font-size: 14px;
 }
