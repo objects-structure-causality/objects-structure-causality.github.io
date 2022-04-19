@@ -5,20 +5,15 @@ layout: default
 <div id="program">
 
 <div class="row">
-  <p>Accepted papers will be listed on the workshop website.</p>
-<!-- <p>
-     For each paper being presented at the workshop, we will host a pdf of the paper and a pre-recorded
-     (lightning / contributed talk) from SlidesLive, both of which can be accessed from each paper's landing page
-     (which you can access by clicking on the title of the relevant paper).
-     We will also host a poster for each paper in
-     <a href="https://neurips.gather.town/app/MMgaAUBjDoq2IBnP/NeurIPS_ORLR"> ORLR GatherTown </a> spread across
+  <p>Accepted papers are hosted on the <a href="https://openreview.net/group?id=ICLR.cc/2022/Workshop/OSC">OSC Workshop OpenReview page</a>.</p>
+<p>
+     All accepted papers will be presented as posters spread across
      <a href="/schedule.html"> two sessions</a>
-     (main session is indicated). <i> All authors are encouraged to present in both sessions.</i></p> -->
+     (session assigment is indicated below), hosted on GatherTown. Orals will be live-streamed on the day of the workshop.</p>
 </div>
 
-<!-- {% for session in site.data.sessions %}
 <div class="row">
-<a name="session-{{ session.id }}"></a>
+<a name="session-1"></a>
 <table class="table table-striped">
 <thead>
      <tr>
@@ -29,41 +24,76 @@ layout: default
 </thead>
 <tbody>
 
-{% for paper in session.papers %}
+
 <tr>
-
 <td>
-<span><a href="/program/orlr_{{ paper.id }}.html">{{ paper.title }}</a></span>
-{% if paper.kind == "oral" %}
+<span><a href="https://openreview.net/forum?id=SSgxDBOIqgq">Object Representations as Fixed Points: Training Iterative Inference Algorithms with Implicit Differentiation</a></span>
 <span> (Oral)</span>
-{% elsif paper.kind == "spotlight" %}
-<span> (Spotlight)</span>
-{% endif %}
-</td>
-
-<td>
-{{ paper.authors }}
-</td>
-
-<td>
-{% if paper.camera_ready %}
-<a href="https://github.com/objects-structure-causality/objects-structure-causality.github.io/blob/master/pdf/OSC_{{ paper.id }}.pdf" target="_blank">PDF</a>
-{% endif %}
 </td>
 <td>
-{% if paper.session == 1 or paper.session == 2%}
-#{{paper.session}}
-{% endif %}
-{% if paper.session == 3%}
-#1/#2
-{% endif %}
+Michael Chang, Thomas L. Griffiths, Sergey Levine
 </td>
-
+<td>
+<a href="https://openreview.net/pdf?id=SSgxDBOIqgq" target="_blank">PDF</a>
+</td>
+<td>
+#2
+</td>
 </tr>
-{% endfor %}
+  
+
+<tr>
+<td>
+<span><a href="https://openreview.net/forum?id=H8QVUSuIqgq">Disentanglement and Generalization Under Correlation Shifts</a></span>
+<span> (Oral)</span>
+</td>
+<td>
+Christina M Funke, Paul Vicol, Kuan-Chieh Wang, Matthias Kuemmerer, Richard Zemel, Matthias Bethge
+</td>
+<td>
+<a href="https://openreview.net/pdf?id=H8QVUSuIqgq" target="_blank">PDF</a>
+</td>
+<td>
+#2
+</td>
+</tr>
+  
+
+<tr>
+<td>
+<span><a href="https://openreview.net/forum?id=rImGHBOL9e5">Learning Fourier-Sparse Functions on DAGs</a></span>
+<span> (Oral)</span>
+</td>
+<td>
+Bastian Seifert, Chris Wendler, Markus Püschel
+</td>
+<td>
+<a href="https://openreview.net/pdf?id=rImGHBOL9e5" target="_blank">PDF</a>
+</td>
+<td>
+#1
+</td>
+</tr>
+  
+
+<tr>
+<td>
+<span><a href="https://openreview.net/forum?id=BW44SrOU9g5">On the Identifiability of Nonlinear ICA with Unconditional Priors</a></span>
+<span> (Oral)</span>
+</td>
+<td>
+Yujia Zheng, Ignavier Ng, Kun Zhang
+</td>
+<td>
+<a href="https://openreview.net/pdf?id=BW44SrOU9g5" target="_blank">PDF</a>
+</td>
+<td>
+#1
+</td>
+</tr>
+
 </tbody>
 </table>
 </div>
-{% endfor %} -->
 
 </div>
